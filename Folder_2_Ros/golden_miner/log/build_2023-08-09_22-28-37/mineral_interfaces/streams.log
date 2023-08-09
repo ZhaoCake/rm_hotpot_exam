@@ -1,0 +1,257 @@
+[0.011s] Invoking command in '/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces -- -j8 -l8
+[0.026s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.117s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.134s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.135s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.139s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.145s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.154s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.224s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.404s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.672s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.774s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.788s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.803s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.803s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.803s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.824s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.829s] -- Added test 'lint_cmake' to check CMake code style
+[0.830s] -- Added test 'xmllint' to check XML markup files
+[0.830s] -- Configuring done
+[0.850s] -- Generating done
+[0.851s] -- Build files have been written to: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces
+[0.869s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.875s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.881s] [  6%] Built target ament_cmake_python_copy_mineral_interfaces
+[1.042s] running egg_info
+[1.043s] writing mineral_interfaces.egg-info/PKG-INFO
+[1.043s] writing dependency_links to mineral_interfaces.egg-info/dependency_links.txt
+[1.043s] writing top-level names to mineral_interfaces.egg-info/top_level.txt
+[1.046s] reading manifest file 'mineral_interfaces.egg-info/SOURCES.txt'
+[1.047s] writing manifest file 'mineral_interfaces.egg-info/SOURCES.txt'
+[1.049s] [  6%] Built target mineral_interfaces__cpp
+[1.055s] [35m[1mConsolidate compiler generated dependencies of target mineral_interfaces__rosidl_generator_c[0m
+[1.056s] [  9%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.056s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.058s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.064s] [ 19%] [32mBuilding C object CMakeFiles/mineral_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mineral_interfaces/msg/detail/mineral__functions.c.o[0m
+[1.072s] [ 19%] Built target ament_cmake_python_build_mineral_interfaces_egg
+[1.095s] [ 22%] [32m[1mLinking C shared library libmineral_interfaces__rosidl_generator_c.so[0m
+[1.122s] [ 22%] Built target mineral_interfaces__rosidl_generator_c
+[1.130s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.130s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.131s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.212s] [35m[1mConsolidate compiler generated dependencies of target mineral_interfaces__rosidl_typesupport_cpp[0m
+[1.221s] [ 35%] [32mBuilding CXX object CMakeFiles/mineral_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mineral_interfaces/msg/mineral__type_support.cpp.o[0m
+[1.296s] [35m[1mConsolidate compiler generated dependencies of target mineral_interfaces__rosidl_typesupport_introspection_c[0m
+[1.305s] [ 38%] [32mBuilding C object CMakeFiles/mineral_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mineral_interfaces/msg/detail/mineral__type_support.c.o[0m
+[1.340s] [35m[1mConsolidate compiler generated dependencies of target mineral_interfaces__rosidl_typesupport_introspection_cpp[0m
+[1.340s] [ 41%] [32m[1mLinking C shared library libmineral_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.345s] [35m[1mConsolidate compiler generated dependencies of target mineral_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[1.354s] [ 45%] [32mBuilding CXX object CMakeFiles/mineral_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mineral_interfaces/msg/detail/mineral__type_support.cpp.o[0m
+[1.356s] [ 48%] [32mBuilding CXX object CMakeFiles/mineral_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/dds_fastrtps/mineral__type_support.cpp.o[0m
+[1.361s] [35m[1mConsolidate compiler generated dependencies of target mineral_interfaces__rosidl_typesupport_fastrtps_c[0m
+[1.368s] [ 48%] Built target mineral_interfaces__rosidl_typesupport_introspection_c
+[1.378s] [ 51%] [32mBuilding CXX object CMakeFiles/mineral_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mineral_interfaces/msg/detail/mineral__type_support_c.cpp.o[0m
+[1.380s] [35m[1mConsolidate compiler generated dependencies of target mineral_interfaces__rosidl_typesupport_c[0m
+[1.391s] [ 54%] [32mBuilding CXX object CMakeFiles/mineral_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/mineral_interfaces/msg/mineral__type_support.cpp.o[0m
+[1.395s] In file included from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_cpp/mineral_interfaces/msg/mineral__type_support.cpp:7[m[K:
+[1.396s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:71:26:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[K;[m[K’ token
+[1.396s]    71 |   _typename_type typename[01;31m[K;[m[K
+[1.396s]       |                          [01;31m[K^[m[K
+[1.396s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:71:3:[m[K [01;31m[Kerror: [m[Kmultiple types in one declaration
+[1.396s]    71 |   [01;31m[K_typename_type[m[K typename;
+[1.396s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.396s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:71:26:[m[K [01;31m[Kerror: [m[Kdeclaration does not declare anything [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.396s]    71 |   _typename_type typename[01;31m[K;[m[K
+[1.396s]       |                          [01;31m[K^[m[K
+[1.396s] In file included from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_cpp/mineral_interfaces/msg/mineral__type_support.cpp:7[m[K:
+[1.396s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:[m[K In constructor ‘[01m[Kmineral_interfaces::msg::Mineral_<ContainerAllocator>::Mineral_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[1.396s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:47:13:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.396s]    47 |       this->[01;31m[Ktypename[m[K = "";
+[1.397s]       |             [01;31m[K^~~~~~~~[m[K
+[1.397s] In file included from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_cpp/mineral_interfaces/msg/mineral__type_support.cpp:7[m[K:
+[1.397s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:[m[K In constructor ‘[01m[Kmineral_interfaces::msg::Mineral_<ContainerAllocator>::Mineral_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[1.397s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:53:5:[m[K [01;31m[Kerror: [m[Kkeyword ‘[01m[Ktypename[m[K’ not allowed in this context (a qualified member initializer is implicitly a type)
+[1.397s]    53 |   : [01;31m[Ktypename[m[K(_alloc),
+[1.397s]       |     [01;31m[K^~~~~~~~[m[K
+[1.397s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:53:13:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K([m[K’ token
+[1.397s]    53 |   : typename[01;31m[K([m[K_alloc),
+[1.397s]       |             [01;31m[K^[m[K
+[1.397s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:53:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K([m[K’ token
+[1.397s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:[m[K In member function ‘[01m[Kmineral_interfaces::msg::Mineral_<ContainerAllocator>::Type& mineral_interfaces::msg::Mineral_<ContainerAllocator>::set__typename(const std::__cxx11::basic_string<char, std::char_traits<char>, typename std::allocator_traits<_Alloc>::rebind_alloc<char> >&)[m[K’:
+[1.397s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:89:11:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.397s]    89 |     this->[01;31m[Ktypename[m[K = _arg;
+[1.397s]       |           [01;31m[K^~~~~~~~[m[K
+[1.397s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:[m[K In member function ‘[01m[Kbool mineral_interfaces::msg::Mineral_<ContainerAllocator>::operator==(const mineral_interfaces::msg::Mineral_<ContainerAllocator>&) const[m[K’:
+[1.398s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:150:15:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.398s]   150 |     if (this->[01;31m[Ktypename[m[K != other.typename) {
+[1.398s]       |               [01;31m[K^~~~~~~~[m[K
+[1.398s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:150:15:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Ktypename[m[K’
+[1.398s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:150:8:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[1.398s]   150 |     if [01;36m[K([m[Kthis->typename != other.typename) {
+[1.398s]       |        [01;36m[K^[m[K
+[1.404s] In file included from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_c/mineral_interfaces/msg/mineral__type_support.cpp:7[m[K:
+[1.404s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_c/mineral_interfaces/msg/detail/mineral__struct.h:30:36:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[K;[m[K’ token
+[1.404s]    30 |   rosidl_runtime_c__String typename[01;31m[K;[m[K
+[1.404s]       |                                    [01;31m[K^[m[K
+[1.404s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_c/mineral_interfaces/msg/detail/mineral__struct.h:30:3:[m[K [01;31m[Kerror: [m[Kmultiple types in one declaration
+[1.404s]    30 |   [01;31m[Krosidl_runtime_c__String[m[K typename;
+[1.404s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.404s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_c/mineral_interfaces/msg/detail/mineral__struct.h:30:36:[m[K [01;31m[Kerror: [m[Kdeclaration does not declare anything [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.404s]    30 |   rosidl_runtime_c__String typename[01;31m[K;[m[K
+[1.404s]       |                                    [01;31m[K^[m[K
+[1.405s] gmake[2]: *** [CMakeFiles/mineral_interfaces__rosidl_typesupport_c.dir/build.make:145：CMakeFiles/mineral_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/mineral_interfaces/msg/mineral__type_support.cpp.o] 错误 1
+[1.406s] gmake[1]: *** [CMakeFiles/Makefile2:343：CMakeFiles/mineral_interfaces__rosidl_typesupport_c.dir/all] 错误 2
+[1.406s] gmake[1]: *** 正在等待未完成的任务....
+[1.417s] gmake[2]: *** [CMakeFiles/mineral_interfaces__rosidl_typesupport_cpp.dir/build.make:145：CMakeFiles/mineral_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mineral_interfaces/msg/mineral__type_support.cpp.o] 错误 1
+[1.417s] gmake[1]: *** [CMakeFiles/Makefile2:395：CMakeFiles/mineral_interfaces__rosidl_typesupport_cpp.dir/all] 错误 2
+[1.510s] In file included from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/mineral__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[1.511s]                  from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/dds_fastrtps/mineral__type_support.cpp:4[m[K:
+[1.511s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:71:26:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[K;[m[K’ token
+[1.511s]    71 |   _typename_type typename[01;31m[K;[m[K
+[1.511s]       |                          [01;31m[K^[m[K
+[1.511s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:71:3:[m[K [01;31m[Kerror: [m[Kmultiple types in one declaration
+[1.511s]    71 |   [01;31m[K_typename_type[m[K typename;
+[1.511s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.511s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:71:26:[m[K [01;31m[Kerror: [m[Kdeclaration does not declare anything [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.511s]    71 |   _typename_type typename[01;31m[K;[m[K
+[1.511s]       |                          [01;31m[K^[m[K
+[1.511s] In file included from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/mineral__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[1.511s]                  from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/dds_fastrtps/mineral__type_support.cpp:4[m[K:
+[1.511s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:[m[K In constructor ‘[01m[Kmineral_interfaces::msg::Mineral_<ContainerAllocator>::Mineral_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[1.511s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:47:13:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.511s]    47 |       this->[01;31m[Ktypename[m[K = "";
+[1.511s]       |             [01;31m[K^~~~~~~~[m[K
+[1.511s] In file included from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/mineral__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[1.511s]                  from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/dds_fastrtps/mineral__type_support.cpp:4[m[K:
+[1.511s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:[m[K In constructor ‘[01m[Kmineral_interfaces::msg::Mineral_<ContainerAllocator>::Mineral_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[1.511s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:53:5:[m[K [01;31m[Kerror: [m[Kkeyword ‘[01m[Ktypename[m[K’ not allowed in this context (a qualified member initializer is implicitly a type)
+[1.511s]    53 |   : [01;31m[Ktypename[m[K(_alloc),
+[1.511s]       |     [01;31m[K^~~~~~~~[m[K
+[1.511s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:53:13:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K([m[K’ token
+[1.511s]    53 |   : typename[01;31m[K([m[K_alloc),
+[1.511s]       |             [01;31m[K^[m[K
+[1.511s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:53:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K([m[K’ token
+[1.512s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:[m[K In member function ‘[01m[Kmineral_interfaces::msg::Mineral_<ContainerAllocator>::Type& mineral_interfaces::msg::Mineral_<ContainerAllocator>::set__typename(const std::__cxx11::basic_string<char, std::char_traits<char>, typename std::allocator_traits<_Alloc>::rebind_alloc<char> >&)[m[K’:
+[1.512s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:89:11:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.512s]    89 |     this->[01;31m[Ktypename[m[K = _arg;
+[1.512s]       |           [01;31m[K^~~~~~~~[m[K
+[1.512s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:[m[K In member function ‘[01m[Kbool mineral_interfaces::msg::Mineral_<ContainerAllocator>::operator==(const mineral_interfaces::msg::Mineral_<ContainerAllocator>&) const[m[K’:
+[1.512s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:150:15:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.512s]   150 |     if (this->[01;31m[Ktypename[m[K != other.typename) {
+[1.512s]       |               [01;31m[K^~~~~~~~[m[K
+[1.512s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:150:15:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Ktypename[m[K’
+[1.512s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:150:8:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[1.512s]   150 |     if [01;36m[K([m[Kthis->typename != other.typename) {
+[1.512s]       |        [01;36m[K^[m[K
+[1.559s] In file included from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_c/mineral_interfaces/msg/detail/mineral__type_support_c.cpp:14[m[K:
+[1.559s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_c/mineral_interfaces/msg/detail/mineral__struct.h:30:36:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[K;[m[K’ token
+[1.559s]    30 |   rosidl_runtime_c__String typename[01;31m[K;[m[K
+[1.559s]       |                                    [01;31m[K^[m[K
+[1.559s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_c/mineral_interfaces/msg/detail/mineral__struct.h:30:3:[m[K [01;31m[Kerror: [m[Kmultiple types in one declaration
+[1.559s]    30 |   [01;31m[Krosidl_runtime_c__String[m[K typename;
+[1.559s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.560s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_c/mineral_interfaces/msg/detail/mineral__struct.h:30:36:[m[K [01;31m[Kerror: [m[Kdeclaration does not declare anything [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.560s]    30 |   rosidl_runtime_c__String typename[01;31m[K;[m[K
+[1.560s]       |                                    [01;31m[K^[m[K
+[1.560s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_c/mineral_interfaces/msg/detail/mineral__type_support_c.cpp:[m[K In function ‘[01m[Kbool _Mineral__cdr_serialize(const void*, eprosima::fastcdr::Cdr&)[m[K’:
+[1.560s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_c/mineral_interfaces/msg/detail/mineral__type_support_c.cpp:76:58:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.560s]    76 |     const rosidl_runtime_c__String * str = &ros_message->[01;31m[Ktypename[m[K;
+[1.560s]       |                                                          [01;31m[K^~~~~~~~[m[K
+[1.560s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_c/mineral_interfaces/msg/detail/mineral__type_support_c.cpp:[m[K In function ‘[01m[Kbool _Mineral__cdr_deserialize(eprosima::fastcdr::Cdr&, void*)[m[K’:
+[1.560s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_c/mineral_interfaces/msg/detail/mineral__type_support_c.cpp:128:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.560s]   128 |     if (!ros_message->[01;31m[Ktypename[m[K.data) {
+[1.560s]       |                       [01;31m[K^~~~~~~~[m[K
+[1.560s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_c/mineral_interfaces/msg/detail/mineral__type_support_c.cpp:128:23:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Ktypename[m[K’
+[1.560s]   128 |     if [34m[K([m[K!ros_message->[01;31m[Kt[m[K[32m[Kypename[m[K.data) {
+[1.561s]       |        [34m[K~[m[K              [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+[1.561s]       |                       [32m[K)[m[K
+[1.561s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_c/mineral_interfaces/msg/detail/mineral__type_support_c.cpp:129:52:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.561s]   129 |       rosidl_runtime_c__String__init(&ros_message->[01;31m[Ktypename[m[K);
+[1.561s]       |                                                    [01;31m[K^~~~~~~~[m[K
+[1.561s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_c/mineral_interfaces/msg/detail/mineral__type_support_c.cpp:132:21:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.561s]   132 |       &ros_message->[01;31m[Ktypename[m[K,
+[1.561s]       |                     [01;31m[K^~~~~~~~[m[K
+[1.561s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_c/mineral_interfaces/msg/detail/mineral__type_support_c.cpp:[m[K In function ‘[01m[Ksize_t get_serialized_size_mineral_interfaces__msg__Mineral(const void*, size_t)[m[K’:
+[1.561s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_c/mineral_interfaces/msg/detail/mineral__type_support_c.cpp:185:19:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.561s]   185 |     (ros_message->[01;31m[Ktypename[m[K.size + 1);
+[1.561s]       |                   [01;31m[K^~~~~~~~[m[K
+[1.561s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_c/mineral_interfaces/msg/detail/mineral__type_support_c.cpp:185:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Ktypename[m[K’
+[1.561s]   185 |     [34m[K([m[Kros_message->[01;31m[Kt[m[K[32m[Kypename[m[K.size + 1);
+[1.561s]       |     [34m[K~[m[K             [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+[1.561s]       |                   [32m[K)[m[K
+[1.573s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/dds_fastrtps/mineral__type_support.cpp:[m[K In function ‘[01m[Kbool mineral_interfaces::msg::typesupport_fastrtps_cpp::cdr_serialize(const Mineral&, eprosima::fastcdr::Cdr&)[m[K’:
+[1.573s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/dds_fastrtps/mineral__type_support.cpp:62:22:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.573s]    62 |   cdr << ros_message.[01;31m[Ktypename[m[K;
+[1.573s]       |                      [01;31m[K^~~~~~~~[m[K
+[1.573s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/dds_fastrtps/mineral__type_support.cpp:[m[K In function ‘[01m[Kbool mineral_interfaces::msg::typesupport_fastrtps_cpp::cdr_deserialize(eprosima::fastcdr::Cdr&, mineral_interfaces::msg::Mineral&)[m[K’:
+[1.573s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/dds_fastrtps/mineral__type_support.cpp:82:22:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.573s]    82 |   cdr >> ros_message.[01;31m[Ktypename[m[K;
+[1.573s]       |                      [01;31m[K^~~~~~~~[m[K
+[1.573s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/dds_fastrtps/mineral__type_support.cpp:[m[K In function ‘[01m[Ksize_t mineral_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size(const Mineral&, size_t)[m[K’:
+[1.573s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/dds_fastrtps/mineral__type_support.cpp:116:18:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.573s]   116 |     (ros_message.[01;31m[Ktypename[m[K.size() + 1);
+[1.573s]       |                  [01;31m[K^~~~~~~~[m[K
+[1.573s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/dds_fastrtps/mineral__type_support.cpp:116:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Ktypename[m[K’
+[1.573s]   116 |     [34m[K([m[Kros_message.[01;31m[Kt[m[K[32m[Kypename[m[K.size() + 1);
+[1.573s]       |     [34m[K~[m[K            [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+[1.573s]       |                  [32m[K)[m[K
+[1.582s] In file included from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_introspection_cpp/mineral_interfaces/msg/detail/mineral__type_support.cpp:12[m[K:
+[1.582s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:71:26:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[K;[m[K’ token
+[1.582s]    71 |   _typename_type typename[01;31m[K;[m[K
+[1.582s]       |                          [01;31m[K^[m[K
+[1.582s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:71:3:[m[K [01;31m[Kerror: [m[Kmultiple types in one declaration
+[1.582s]    71 |   [01;31m[K_typename_type[m[K typename;
+[1.582s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.582s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:71:26:[m[K [01;31m[Kerror: [m[Kdeclaration does not declare anything [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.582s]    71 |   _typename_type typename[01;31m[K;[m[K
+[1.582s]       |                          [01;31m[K^[m[K
+[1.582s] In file included from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_introspection_cpp/mineral_interfaces/msg/detail/mineral__type_support.cpp:12[m[K:
+[1.582s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:[m[K In constructor ‘[01m[Kmineral_interfaces::msg::Mineral_<ContainerAllocator>::Mineral_(rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[1.582s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:47:13:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.583s]    47 |       this->[01;31m[Ktypename[m[K = "";
+[1.583s]       |             [01;31m[K^~~~~~~~[m[K
+[1.583s] In file included from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_introspection_cpp/mineral_interfaces/msg/detail/mineral__type_support.cpp:12[m[K:
+[1.583s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:[m[K In constructor ‘[01m[Kmineral_interfaces::msg::Mineral_<ContainerAllocator>::Mineral_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization)[m[K’:
+[1.583s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:53:5:[m[K [01;31m[Kerror: [m[Kkeyword ‘[01m[Ktypename[m[K’ not allowed in this context (a qualified member initializer is implicitly a type)
+[1.583s]    53 |   : [01;31m[Ktypename[m[K(_alloc),
+[1.583s]       |     [01;31m[K^~~~~~~~[m[K
+[1.583s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:53:13:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K([m[K’ token
+[1.583s]    53 |   : typename[01;31m[K([m[K_alloc),
+[1.583s]       |             [01;31m[K^[m[K
+[1.583s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:53:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K([m[K’ token
+[1.583s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:[m[K In member function ‘[01m[Kmineral_interfaces::msg::Mineral_<ContainerAllocator>::Type& mineral_interfaces::msg::Mineral_<ContainerAllocator>::set__typename(const std::__cxx11::basic_string<char, std::char_traits<char>, typename std::allocator_traits<_Alloc>::rebind_alloc<char> >&)[m[K’:
+[1.583s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:89:11:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.583s]    89 |     this->[01;31m[Ktypename[m[K = _arg;
+[1.583s]       |           [01;31m[K^~~~~~~~[m[K
+[1.583s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:[m[K In member function ‘[01m[Kbool mineral_interfaces::msg::Mineral_<ContainerAllocator>::operator==(const mineral_interfaces::msg::Mineral_<ContainerAllocator>&) const[m[K’:
+[1.583s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:150:15:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.583s]   150 |     if (this->[01;31m[Ktypename[m[K != other.typename) {
+[1.583s]       |               [01;31m[K^~~~~~~~[m[K
+[1.583s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:150:15:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Ktypename[m[K’
+[1.583s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_generator_cpp/mineral_interfaces/msg/detail/mineral__struct.hpp:150:8:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[1.583s]   150 |     if [01;36m[K([m[Kthis->typename != other.typename) {
+[1.583s]       |        [01;36m[K^[m[K
+[1.583s] gmake[2]: *** [CMakeFiles/mineral_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make:150：CMakeFiles/mineral_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mineral_interfaces/msg/detail/mineral__type_support_c.cpp.o] 错误 1
+[1.583s] gmake[1]: *** [CMakeFiles/Makefile2:239：CMakeFiles/mineral_interfaces__rosidl_typesupport_fastrtps_c.dir/all] 错误 2
+[1.583s] In file included from [01m[K/usr/include/stdio.h:33[m[K,
+[1.584s]                  from [01m[K/usr/include/c++/11/cstdio:42[m[K,
+[1.584s]                  from [01m[K/usr/include/c++/11/ext/string_conversions.h:43[m[K,
+[1.584s]                  from [01m[K/usr/include/c++/11/bits/basic_string.h:6608[m[K,
+[1.584s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[1.584s]                  from [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_introspection_cpp/mineral_interfaces/msg/detail/mineral__type_support.cpp:7[m[K:
+[1.584s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_introspection_cpp/mineral_interfaces/msg/detail/mineral__type_support.cpp:[m[K At global scope:
+[1.584s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_introspection_cpp/mineral_interfaces/msg/detail/mineral__type_support.cpp:66:48:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Ktypename[m[K’
+[1.584s]    66 |     offsetof(mineral_interfaces::msg::Mineral, [01;31m[Ktypename[m[K),  // bytes offset in struct
+[1.584s]       |                                                [01;31m[K^~~~~~~~[m[K
+[1.584s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_introspection_cpp/mineral_interfaces/msg/detail/mineral__type_support.cpp:66:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Ktypename[m[K’
+[1.584s] [01m[K/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces/rosidl_typesupport_introspection_cpp/mineral_interfaces/msg/detail/mineral__type_support.cpp:66:5:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[1.584s]    66 |     [01;36m[Koffsetof[m[K(mineral_interfaces::msg::Mineral, typename),  // bytes offset in struct
+[1.584s]       |     [01;36m[K^~~~~~~~[m[K
+[1.595s] gmake[2]: *** [CMakeFiles/mineral_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:150：CMakeFiles/mineral_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mineral_interfaces/msg/detail/dds_fastrtps/mineral__type_support.cpp.o] 错误 1
+[1.595s] gmake[1]: *** [CMakeFiles/Makefile2:291：CMakeFiles/mineral_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] 错误 2
+[1.606s] gmake[2]: *** [CMakeFiles/mineral_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:150：CMakeFiles/mineral_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mineral_interfaces/msg/detail/mineral__type_support.cpp.o] 错误 1
+[1.606s] gmake[1]: *** [CMakeFiles/Makefile2:369：CMakeFiles/mineral_interfaces__rosidl_typesupport_introspection_cpp.dir/all] 错误 2
+[1.607s] gmake: *** [Makefile:146：all] 错误 2
+[1.608s] Invoked command in '/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/golden_miner/build/mineral_interfaces -- -j8 -l8
