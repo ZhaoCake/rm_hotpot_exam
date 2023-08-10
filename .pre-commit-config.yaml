@@ -1,0 +1,17 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pocc/pre-commit-hooks.git
+    rev: v1.3.5
+    hooks:
+      - id: clang-format
+        args: [--style=Google]
+      - id: cpplint
+  - repo: https://gitee.com/irving512/flake8
+    rev: 3.8.4
+    hooks:
+      - id: flake8
+  - repo: https://gitee.com/irving512/mirrors-yapf
+    rev: v0.30.0
+    hooks:
+      - id: yapf

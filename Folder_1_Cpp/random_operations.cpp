@@ -64,7 +64,7 @@ float createTimerLoop(int period, std::vector<float>& data, std::vector<std::fun
     // 执行操作
     auto result = operation(data);
     // 输出结果
-    std::cout << result << std::endl;   
+    std::cout << result << std::endl;
 }
 
 // 主函数
