@@ -1,8 +1,0 @@
-setup.py
-au_interfaces/__init__.py
-au_interfaces.egg-info/PKG-INFO
-au_interfaces.egg-info/SOURCES.txt
-au_interfaces.egg-info/dependency_links.txt
-au_interfaces.egg-info/top_level.txt
-au_interfaces/msg/__init__.py
-au_interfaces/msg/_mineralsingle.py
