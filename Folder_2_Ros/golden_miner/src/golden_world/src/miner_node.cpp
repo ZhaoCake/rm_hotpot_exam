@@ -12,8 +12,9 @@ public:
         // 订阅矿石数组
         subcription_ = this->create_subscription<mineral_interfaces::msg::MineralArray>(
             "mineral_array", 10, std::bind(&Miner::mineral_array_callback, this, std::placeholders::_1));   
+        RCLCPP_INFO(this->get_logger(), "矿工已启动");
         // 创建客户端
-        client_ = this->create_client<mineral_interfaces::srv::Fetch>("fetch"); 
+        client_ = this->create_client<mineral_interfaces::srv::Fetch>("fetch");
     }
 
     // 连接服务器
@@ -32,7 +33,7 @@ public:
     }
 
     //发送服务
-    void send_request()
+    void send_request(int get_index)
     {
         // 创建请求
         auto request = std::make_shared<mineral_interfaces::srv::Fetch::Request>();
@@ -43,15 +44,17 @@ public:
         if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), future) == rclcpp::FutureReturnCode::SUCCESS)
         {
             // 获取响应
+            // debug
+            RCLCPP_INFO(this->get_logger(), "开始获取响应");
             auto response = future.get();
-            RCLCPP_INFO(this->get_logger(), "收到响应，矿石位置：(%f, %f, %f)，当前价值：%lf", response->position.x, response->position.y, response->position.z, response->price);
+            RCLCPP_INFO(this->get_logger(), "已获取响应");
+            RCLCPP_INFO(this->get_logger(), "收到响应，矿石位置：(%f, %f, %f)，当前总的价值：%lf", response->position.x, response->position.y, response->position.z, response->price_all);
         }
         else
         {
             RCLCPP_ERROR(this->get_logger(), "服务请求失败");
         }
     }
-
 
 private:
     rclcpp::Subscription<mineral_interfaces::msg::MineralArray>::SharedPtr subcription_; // 创建订阅者
@@ -68,17 +71,17 @@ private:
         point.z = 0;
         return point;
     }
-
-    int get_index = 0;  // 获取矿石编号
     
     // 订阅矿石数组的回调函数
     void mineral_array_callback(const mineral_interfaces::msg::MineralArray::SharedPtr msg)
     {
-        RCLCPP_INFO(this->get_logger(), "收到矿石数组，共有%d个矿石", msg->minerals.size());
+        RCLCPP_INFO(this->get_logger(), "收到矿石数组，共有%d个矿石", (int)(msg->minerals.size()));
         // 选择出距离自己最近的矿石的index
         int index = chooseMineral(msg);
-        // 
-        get_index = index;
+        // 输出
+        RCLCPP_INFO(this->get_logger(), "成功选择出距离自己最近的矿石，编号为%d", index);
+        send_request(index);
+        RCLCPP_INFO(this->get_logger(), "已成功发送服务请求");
     }
 
     // 计算矿石到自己当前位置的距离
@@ -93,13 +96,13 @@ private:
     {
         // 计算出每个矿石到自己当前位置的距离，并与index配对
         std::vector<std::pair<double, int>> distance_index;
-        for (int i = 0; i < msg->minerals.size(); i++)
+        for (int i = 0; i < (int)(msg->minerals.size()); i++)
         {
             distance_index.push_back(std::make_pair(distance(msg->minerals[i]), msg->minerals[i].index));
         }
         // 比较得出distance_index中每组键值对中的键的最小值
         std::pair<double, int> min_distance_index = distance_index[0];
-        for (int i = 1; i < distance_index.size(); i++)
+        for (int i = 1; i < (int)distance_index.size(); i++)
         {
             if (distance_index[i].first < min_distance_index.first)
             {

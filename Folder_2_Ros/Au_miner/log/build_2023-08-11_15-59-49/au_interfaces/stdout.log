@@ -1,0 +1,272 @@
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/build/au_interfaces
+[  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[35m[1mConsolidate compiler generated dependencies of target au_interfaces__rosidl_generator_c[0m
+[  2%] Built target ament_cmake_python_copy_au_interfaces
+[  5%] [34m[1mGenerating C code for ROS interfaces[0m
+running egg_info
+writing au_interfaces.egg-info/PKG-INFO
+writing dependency_links to au_interfaces.egg-info/dependency_links.txt
+writing top-level names to au_interfaces.egg-info/top_level.txt
+reading manifest file 'au_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'au_interfaces.egg-info/SOURCES.txt'
+[  5%] Built target ament_cmake_python_build_au_interfaces_egg
+[  5%] Built target au_interfaces__cpp
+[ 10%] [32mBuilding C object CMakeFiles/au_interfaces__rosidl_generator_c.dir/rosidl_generator_c/au_interfaces/msg/detail/mineralsingle__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/au_interfaces__rosidl_generator_c.dir/rosidl_generator_c/au_interfaces/action/detail/mineral__functions.c.o[0m
+[35m[1mConsolidate compiler generated dependencies of target au_interfaces__rosidl_typesupport_introspection_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target au_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target au_interfaces__rosidl_typesupport_cpp[0m
+[ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 20%] [32m[1mLinking C shared library libau_interfaces__rosidl_generator_c.so[0m
+[ 20%] Built target au_interfaces__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target au_interfaces__rosidl_typesupport_c[0m
+[35m[1mConsolidate compiler generated dependencies of target au_interfaces__rosidl_typesupport_fastrtps_c[0m
+[35m[1mConsolidate compiler generated dependencies of target au_interfaces__rosidl_typesupport_introspection_c[0m
+[ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/au_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/au_interfaces/msg/mineralsingle__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/au_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/au_interfaces/action/mineral__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/au_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/au_interfaces/action/detail/mineral__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/au_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/au_interfaces/msg/detail/mineralsingle__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/au_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/au_interfaces/msg/detail/dds_fastrtps/mineralsingle__type_support.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/au_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/au_interfaces/msg/mineralsingle__type_support.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/au_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/au_interfaces/action/mineral__type_support.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/au_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/au_interfaces/action/detail/dds_fastrtps/mineral__type_support.cpp.o[0m
+[ 51%] [32mBuilding C object CMakeFiles/au_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/au_interfaces/msg/detail/mineralsingle__type_support.c.o[0m
+[ 53%] [32m[1mLinking CXX shared library libau_interfaces__rosidl_typesupport_c.so[0m
+[ 56%] [32mBuilding C object CMakeFiles/au_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/au_interfaces/action/detail/mineral__type_support.c.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/au_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/au_interfaces/msg/detail/mineralsingle__type_support_c.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/au_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/au_interfaces/action/detail/mineral__type_support_c.cpp.o[0m
+[ 61%] Built target au_interfaces__rosidl_typesupport_c
+[ 64%] [32m[1mLinking C shared library libau_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 66%] [32m[1mLinking CXX shared library libau_interfaces__rosidl_typesupport_cpp.so[0m
+[ 66%] Built target au_interfaces__rosidl_typesupport_introspection_c
+[ 66%] Built target au_interfaces__rosidl_typesupport_cpp
+[ 69%] [32m[1mLinking CXX shared library libau_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 69%] Built target au_interfaces__rosidl_typesupport_introspection_cpp
+[ 71%] [32m[1mLinking CXX shared library libau_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 71%] Built target au_interfaces__rosidl_typesupport_fastrtps_c
+[ 74%] [32m[1mLinking CXX shared library libau_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 74%] Built target au_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 74%] Built target au_interfaces
+[ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 76%] Built target au_interfaces__py
+[35m[1mConsolidate compiler generated dependencies of target au_interfaces__rosidl_generator_py[0m
+[ 82%] [32mBuilding C object CMakeFiles/au_interfaces__rosidl_generator_py.dir/rosidl_generator_py/au_interfaces/msg/_mineralsingle_s.c.o[0m
+[ 82%] [32mBuilding C object CMakeFiles/au_interfaces__rosidl_generator_py.dir/rosidl_generator_py/au_interfaces/action/_mineral_s.c.o[0m
+[ 84%] [32m[1mLinking C shared library rosidl_generator_py/au_interfaces/libau_interfaces__rosidl_generator_py.so[0m
+[ 84%] Built target au_interfaces__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target au_interfaces__rosidl_typesupport_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target au_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target au_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[ 92%] [32mBuilding C object CMakeFiles/au_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/au_interfaces/_au_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/au_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/au_interfaces/_au_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/au_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/au_interfaces/_au_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/au_interfaces/au_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/au_interfaces/au_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/au_interfaces/au_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target au_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target au_interfaces__rosidl_typesupport_c__pyext
+[100%] Built target au_interfaces__rosidl_typesupport_introspection_c__pyext
+-- Install configuration: ""
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/ament_index/resource_index/rosidl_interfaces/au_interfaces
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/mineral__type_support.h
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/mineral__functions.c
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/mineral__functions.h
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/mineral__struct.h
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/mineral.h
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/mineralsingle__functions.h
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/mineralsingle__type_support.h
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/mineralsingle__functions.c
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/mineralsingle__struct.h
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/mineralsingle.h
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/environment/library_path.sh
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/environment/library_path.dsv
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_generator_c.so
+-- Set runtime path of "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/mineral__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/mineralsingle__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/mineral__builder.hpp
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/mineral__traits.hpp
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/mineral__struct.hpp
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/mineral.hpp
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/mineralsingle__builder.hpp
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/mineralsingle__struct.hpp
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/mineralsingle__traits.hpp
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/mineralsingle.hpp
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/mineral__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/dds_fastrtps
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/mineralsingle__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/dds_fastrtps
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/mineral__type_support.c
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/mineral__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/mineralsingle__rosidl_typesupport_introspection_c.h
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/mineralsingle__type_support.c
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_typesupport_c.so
+-- Set runtime path of "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/mineral__type_support.cpp
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/action/detail/mineral__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/mineralsingle__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/include/au_interfaces/au_interfaces/msg/detail/mineralsingle__type_support.cpp
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_typesupport_cpp.so" to ""
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/environment/pythonpath.sh
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/environment/pythonpath.dsv
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces-0.0.0-py3.10.egg-info
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/au_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/libau_interfaces__rosidl_generator_py.so
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/_au_interfaces_s.ep.rosidl_typesupport_c.c
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/_au_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/au_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/__init__.py
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/action
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/action/_mineral_s.c
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/action/__init__.py
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/action/_mineral.py
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/msg
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/msg/__init__.py
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/msg/_mineralsingle_s.c
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/msg/_mineralsingle.py
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/_au_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/au_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+Listing '/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces'...
+Compiling '/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/__init__.py'...
+Listing '/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/action'...
+Compiling '/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/action/__init__.py'...
+Compiling '/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/action/_mineral.py'...
+Listing '/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/msg'...
+Compiling '/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/msg/__init__.py'...
+Compiling '/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/msg/_mineralsingle.py'...
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/au_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/au_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/au_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/au_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/au_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/local/lib/python3.10/dist-packages/au_interfaces/au_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_generator_py.so
+-- Set runtime path of "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/lib/libau_interfaces__rosidl_generator_py.so" to ""
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/msg/Mineralsingle.idl
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/action/Mineral.idl
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/msg/Mineralsingle.msg
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/action/Mineral.action
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/ament_index/resource_index/package_run_dependencies/au_interfaces
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/ament_index/resource_index/parent_prefix_path/au_interfaces
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/environment/ament_prefix_path.sh
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/environment/path.sh
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/environment/path.dsv
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/local_setup.bash
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/local_setup.sh
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/local_setup.zsh
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/local_setup.dsv
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/package.dsv
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/ament_index/resource_index/packages/au_interfaces
+-- Old export file "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_generator_cExport.cmake" will be replaced.  Removing files [/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_generator_cExport-noconfig.cmake].
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_generator_cExport.cmake
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Old export file "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_typesupport_fastrtps_cExport.cmake" will be replaced.  Removing files [/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake].
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_generator_cppExport.cmake
+-- Old export file "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake" will be replaced.  Removing files [/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake].
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Old export file "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_introspection_cExport.cmake" will be replaced.  Removing files [/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake].
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Old export file "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_cExport.cmake" will be replaced.  Removing files [/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_cExport-noconfig.cmake].
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_cExport.cmake
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Old export file "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_introspection_cppExport.cmake" will be replaced.  Removing files [/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake].
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Old export file "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_cppExport.cmake" will be replaced.  Removing files [/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_cppExport-noconfig.cmake].
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Old export file "/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_generator_pyExport.cmake" will be replaced.  Removing files [/home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_generator_pyExport-noconfig.cmake].
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_generator_pyExport.cmake
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/export_au_interfaces__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfacesConfig.cmake
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/cmake/au_interfacesConfig-version.cmake
+-- Up-to-date: /home/zhaocake/Documents/single_program/rm_hotpot_exam/Folder_2_Ros/Au_miner/install/au_interfaces/share/au_interfaces/package.xml

@@ -10,7 +10,30 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(mineral_interfaces REQUIRED)
 
+add_executable(golden_world_node src/golden_world_node.cpp)
+add_executable(miner_node src/miner_node.cpp)
 
+ament_target_dependencies(
+  golden_world_node
+  "rclcpp"
+  "mineral_interfaces"
+)
+
+ament_target_dependencies(
+  miner_node
+  "rclcpp"
+  "mineral_interfaces"
+)
+
+install(TARGETS
+  golden_world_node
+  miner_node
+  DESTINATION lib/${PROJECT_NAME})
+
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

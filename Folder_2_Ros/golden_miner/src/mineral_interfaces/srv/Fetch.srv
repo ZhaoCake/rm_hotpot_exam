@@ -1,4 +1,4 @@
 int32 index
 ---
 geometry_msgs/Point position
-float64 price
+float64 price_all

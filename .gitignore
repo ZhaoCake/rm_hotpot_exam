@@ -1,8 +1,12 @@
 Folder_2_Ros/golden_miner/build
+Folder_2_Ros/au_miner/build
 Folder_2_Ros/golden_miner/install
+Folder_2_Ros/au_miner/install
 Folder_2_Ros/golden_miner/log
+Folder_2_Ros/au_miner/log
 Folder_2_Ros/.vscode
 Folder_2_Ros/golden_miner/.vscode
+Folder_2_Ros/au_miner/.vscode
 
 # User ================================
 # 用户自定义的其他忽略文件
