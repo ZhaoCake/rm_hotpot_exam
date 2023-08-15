@@ -9,51 +9,13 @@ class Miner : public rclcpp::Node
 public:
     Miner() : Node("miner")
     {
-        // 订阅矿石数组
-        subcription_ = this->create_subscription<mineral_interfaces::msg::MineralArray>(
-            "mineral_array", 10, std::bind(&Miner::mineral_array_callback, this, std::placeholders::_1));   
-        RCLCPP_INFO(this->get_logger(), "矿工已启动");
         // 创建客户端
         client_ = this->create_client<mineral_interfaces::srv::Fetch>("fetch");
-    }
-
-    // 连接服务器
-    void connect_to_server()
-    {
-        while (!client_->wait_for_service(std::chrono::seconds(1)))
-        {
-            if (!rclcpp::ok())
-            {
-                RCLCPP_ERROR(this->get_logger(), "客户端被中断");
-                return;
-            }
-            RCLCPP_INFO(this->get_logger(), "等待服务器启动");
-        }
-        RCLCPP_INFO(this->get_logger(), "已成功连接到服务器");
-    }
-
-    //发送服务
-    void send_request(int get_index)
-    {
-        // 创建请求
-        auto request = std::make_shared<mineral_interfaces::srv::Fetch::Request>();
-        request->index = get_index;
-        // 发送请求
-        auto future = client_->async_send_request(request);
-        // 等待响应
-        if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), future) == rclcpp::FutureReturnCode::SUCCESS)
-        {
-            // 获取响应
-            // debug
-            RCLCPP_INFO(this->get_logger(), "开始获取响应");
-            auto response = future.get();
-            RCLCPP_INFO(this->get_logger(), "已获取响应");
-            RCLCPP_INFO(this->get_logger(), "收到响应，矿石位置：(%f, %f, %f)，当前总的价值：%lf", response->position.x, response->position.y, response->position.z, response->price_all);
-        }
-        else
-        {
-            RCLCPP_ERROR(this->get_logger(), "服务请求失败");
-        }
+        
+        // 订阅矿石数组
+        subcription_ = this->create_subscription<mineral_interfaces::msg::MineralArray>(
+            "mineral_array", 10, std::bind(&Miner::mineral_array_callback, this, std::placeholders::_1));          
+        RCLCPP_INFO(this->get_logger(), "矿工已启动");
     }
 
 private:
@@ -76,12 +38,31 @@ private:
     void mineral_array_callback(const mineral_interfaces::msg::MineralArray::SharedPtr msg)
     {
         RCLCPP_INFO(this->get_logger(), "收到矿石数组，共有%d个矿石", (int)(msg->minerals.size()));
+        // 如果矿石数为0,则不执行后续操作
+        if (msg->minerals.size() == 0)
+        {
+            RCLCPP_INFO(this->get_logger(), "矿石数为0，挖完了再见");
+            rclcpp::shutdown();
+        }
         // 选择出距离自己最近的矿石的index
         int index = chooseMineral(msg);
         // 输出
         RCLCPP_INFO(this->get_logger(), "成功选择出距离自己最近的矿石，编号为%d", index);
-        send_request(index);
+        // // 创建请求
+        auto request = std::make_shared<mineral_interfaces::srv::Fetch::Request>();
+        request->index = index;
+        // 发送请求
+        auto future = client_->async_send_request(request, std::bind(&Miner::send_request_callback, this, std::placeholders::_1));
         RCLCPP_INFO(this->get_logger(), "已成功发送服务请求");
+    }
+
+    // 发送服务的回调函数
+    void send_request_callback(rclcpp::Client<mineral_interfaces::srv::Fetch>::SharedFuture future)
+    {
+        // 获取响应
+        auto response = future.get();
+        RCLCPP_INFO(this->get_logger(), "收到响应，矿石位置：(%f, %f, %f)，当前总的价值：%lf", response->position.x, response->position.y, response->position.z, response->price_all);
+        response.reset();
     }
 
     // 计算矿石到自己当前位置的距离

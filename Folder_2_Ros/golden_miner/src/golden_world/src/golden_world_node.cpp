@@ -17,7 +17,8 @@ public:
         // 创建定时器，每秒发布一次矿石数组
         timer_ = this->create_wall_timer(std::chrono::seconds(1), std::bind(&GoldenWorld::timer_callback, this));
         // 创建服务，用于接收矿工的请求
-        service_ = this->create_service<mineral_interfaces::srv::Fetch>("fetch", std::bind(&GoldenWorld::fetch, this, std::placeholders::_1, std::placeholders::_2));
+        service_ = this->create_service<mineral_interfaces::srv::Fetch>("fetch", std::bind(&GoldenWorld::fetch,
+        this, std::placeholders::_1, std::placeholders::_2));
     }
 
 private:
@@ -67,16 +68,16 @@ private:
     // 定时器回调函数
     void timer_callback()
     {
+        
+        // 发布矿石数组
+        publisher_->publish(mineral_array);
+        RCLCPP_INFO(this->get_logger(), "当前还有%d个矿石", int(mineral_array.minerals.size()));
         // 检查矿石是否已经被挖完，如果是，则结束程序，并告诉矿工
         if (mineral_array.minerals.size() == 0)
         {
             RCLCPP_INFO(this->get_logger(), "矿石已经被挖完，程序结束");
             rclcpp::shutdown();
         }
-        
-        // 发布矿石数组
-        publisher_->publish(mineral_array);
-        RCLCPP_INFO(this->get_logger(), "当前还有%d个矿石", int(mineral_array.minerals.size()));
     }
 
     // 服务回调函数
