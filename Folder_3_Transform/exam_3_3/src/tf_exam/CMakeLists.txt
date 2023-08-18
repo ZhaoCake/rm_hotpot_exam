@@ -13,7 +13,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 
 add_executable(exam_3_3_1 src/exam_3_3_1.cpp)
-# add_executable(exam_3_3_2 src/exam_3_3_2.cpp)
+add_executable(exam_3_3_2 src/exam_3_3_2.cpp)
 target_include_directories(exam_3_3_1 PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
@@ -25,17 +25,18 @@ ament_target_dependencies(
   "tf2_ros"
   "geometry_msgs"
 )
-# ament_target_dependencies(
-#   exam_3_3_2
-#   "rclcpp"
-#   "tf2"
-#   "tf2_ros"
-#   "geometry_msgs"
-# )
+ament_target_dependencies(
+  exam_3_3_2
+  "rclcpp"
+  "tf2"
+  "tf2_ros"
+  "geometry_msgs"
+  "tf2_geometry_msgs"
+)
 
 install(TARGETS
   exam_3_3_1
-  # exam_3_3_2
+  exam_3_3_2
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
