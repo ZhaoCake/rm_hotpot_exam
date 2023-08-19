@@ -37,18 +37,22 @@ private:
     // 订阅矿石数组的回调函数
     void mineral_array_callback(const mineral_interfaces::msg::MineralArray::SharedPtr msg)
     {
-        RCLCPP_INFO(this->get_logger(), "收到矿石数组，共有%d个矿石", (int)(msg->minerals.size()));
         // 如果矿石数为0,则不执行后续操作
         if (msg->minerals.size() == 0)
         {
             RCLCPP_INFO(this->get_logger(), "矿石数为0，挖完了再见");
+            // 强制结束当前节点
             rclcpp::shutdown();
+            return;
         }
+        RCLCPP_INFO(this->get_logger(), "收到矿石数组，共有%d个矿石", (int)(msg->minerals.size()));
+        
         // 选择出距离自己最近的矿石的index
         int index = chooseMineral(msg);
         // 输出
         RCLCPP_INFO(this->get_logger(), "成功选择出距离自己最近的矿石，编号为%d", index);
-        // // 创建请求
+        
+        // 创建请求
         auto request = std::make_shared<mineral_interfaces::srv::Fetch::Request>();
         request->index = index;
         // 发送请求

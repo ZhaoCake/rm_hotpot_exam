@@ -1,3 +1,5 @@
+// 完整观看录播时间：2023年8月17日。
+// 和截屏里面的时间不一样，因为我头一次只看到文字要记录时间，第二天再看的时候听到要”留影“，声音有些不清楚，我不肯定确实说的是留影。
 #include <opencv2/opencv.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <cv_bridge/cv_bridge.h>
@@ -32,6 +34,12 @@ private:
         // 根据颜色参数，提取颜色
         std::string color;
         this->get_parameter("color", color);
+        /*
+         * 似乎由于光线的问题，即使是使用了hsv空间也还是会有一些颜色识别不出来。
+           考虑改变光源而不是阈值。
+           考虑获取图像并确定其hsv阈值
+           后面再做。  
+         */
         cv::Scalar lower, upper;
         if (color == "red") {
             lower = cv::Scalar(140, 20, 20);
