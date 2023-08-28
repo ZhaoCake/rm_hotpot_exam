@@ -63,7 +63,7 @@ Folder_4_Opencv
 
 在最初自以为完成这个试题的时候，采用的是对像素进行帧间差分的方法，但是在前几天的群聊中，被前辈指出是不可行的，所以后面几天赶工改为采用对弧度数进行帧间差分的方法；这样基本上可以避免前辈们提到的一旦转头就会导致速度大变的情况，因为是根据当前尖端像素位置和识别出的圆心像素位置的相对关系来转为弧度数的。
 
-感谢文档：[RMUC2022大能量机关预测器](https://birdiebot.github.io/bubble_documentation/theory/RMUC2022%E5%A4%A7%E8%83%BD%E9%87%8F%E6%9C%BA%E5%85%B3%E9%A2%84%E6%B5%8B%E5%99%A8.htmlhttps://birdiebot.github.io/bubble_documentation/theory/RMUC2022%E5%A4%A7%E8%83%BD%E9%87%8F%E6%9C%BA%E5%85%B3%E9%A2%84%E6%B5%8B%E5%99%A8.html) 给我思路上的帮助，同时，也有部分代码借助了文档中的实现形式，但都根据自己的需求进行了修改，完全可以被对照检查。
+感谢文档：[RMUC2022大能量机关预测器](https://birdiebot.github.io/bubble_documentation/theory/RMUC2022%E5%A4%A7%E8%83%BD%E9%87%8F%E6%9C%BA%E5%85%B3%E9%A2%84%E6%B5%8B%E5%99%A8.html) 给我思路上的帮助，同时，也有部分代码借助了文档中的实现形式，但都根据自己的需求进行了修改，完全可以被对照检查。
 
 在`predict.py`的类函数`predict`中，我使用了叠加25次的方法。
 因为我在计算角速度的时候是进行差两帧的计算。这在`思路解释`的开头已经提到过了。
