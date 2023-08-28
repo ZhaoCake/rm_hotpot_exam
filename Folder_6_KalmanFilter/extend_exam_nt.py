@@ -42,9 +42,9 @@ def main():
         ret, frame = cap.read()
         if ret:
             center, r = get_center(frame)
-            kalman_filter_x.kalman_adaptive(center[0])
-            cx_pre = int(kalman_filter_x.return_predict())
-            kalman_filter_y.kalman_adaptive(center[1])
+            kalman_filter_x.kalman_adaptive(center[0])  # 默认参数update=1，是会使用自适应更新的。
+            cx_pre = int(kalman_filter_x.return_predict())  
+            kalman_filter_y.kalman_adaptive(center[1])  # 设为0则是不使用自适应更新
             cy_pre = int(kalman_filter_y.return_predict())
             cv2.circle(frame, (cx_pre, cy_pre), r, (123, 0, 43), 2)
             # 在图片左上角显示图例说明

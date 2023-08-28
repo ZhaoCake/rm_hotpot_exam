@@ -9,8 +9,10 @@
 std::vector<float> createRandomData(int num) {
     u_int seed = time(NULL);
     std::vector<float> data;
+    //产生数据不能有0，并且有num个
     for (int i = 0; i < num; i++) {
-        data.push_back(rand_r(&seed) % num);
+        float random = rand_r(&seed) % 100 + 1;
+        data.push_back(random);
     }
     return data;
 }
@@ -58,16 +60,21 @@ void createTimerLoop(int period,
     // 等待500ms
     usleep(period * 1000);
     // 从operations中随机取出一种操作
-    auto operation = operations[rand() % operations.size()];
+    auto operation = operations[rand() % operations.size()];  // 使用了函数指针
     // 执行操作
     auto result = operation(data);
     // 输出结果
     std::cout << result << std::endl;
 }
 
-// 主函数
-int main() {
+// 主函数, 可以通过命令行参数指定数据个数, argc
+int main(int argc, char * argv[]) {
     int num = 100;
+    // 可通过命令行参数修改num
+    if (argc > 1) {
+        num = atoi(argv[1]);
+    }
+    // 参数使用实例： ./random_operations 100
     // 使用函数获取随机数据，从而可以指定数据个数
     std::vector<float> data = createRandomData(num);
     std::vector<std::function<float(const std::vector<float>&)>> operations;
