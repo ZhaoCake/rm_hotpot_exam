@@ -110,7 +110,9 @@ yolo pose predict model=/home/zhaofake/mmlab/ultralytics/runs/pose/train2/weight
 
 自己区分数据集的脚本，在文件夹`YOLOv8`中。
 
+### 一点补充
 
+前两天群里对yolov5和yolov5face的一些区别进行了小范围讨论。yolov5face是目标检测任务，但是不是纯粹的目标检测任务，是使用了关键点回归的，是带有关键点信息的目标检测任务。我想这也就是几个同学在使用ultralytics时检测框出现问题的原因。因为针对pose任务和detect任务的数据增强策略是不一样的。应该是在detect任务的数据增强过程中对标注框同样进行了变换。
 
 
 
