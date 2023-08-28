@@ -8,8 +8,9 @@ class GoldenWorld : public rclcpp::Node
 {
 public:
     GoldenWorld() : Node("golden_world") {
-        // 创建参数，用于初始化矿石的数量
-        this->declare_parameter<int>("mineral_count", 9);
+        // 创建参数，用于初始化矿石的数量,接受launch文件的参数，默认值14
+        this->declare_parameter("mineral_count", 14);
+        // 初始化矿石数组
         mineral_array = initMineralArray();
         // 创建发布者，发布矿石数组
         publisher_ = this->create_publisher<mineral_interfaces::msg::MineralArray>("mineral_array", 10);

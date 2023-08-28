@@ -1,4 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
+#include "geometry_msgs/msg/point_stamped.hpp"
 
 #include "mineral_interfaces/msg/mineral.hpp"
 #include "mineral_interfaces/msg/mineral_array.hpp"
@@ -16,12 +17,18 @@ public:
         subcription_ = this->create_subscription<mineral_interfaces::msg::MineralArray>(
             "mineral_array", 10, std::bind(&Miner::mineral_array_callback, this, std::placeholders::_1));          
         RCLCPP_INFO(this->get_logger(), "矿工已启动");
+
+        // 创建发布者，发布给rviz2的位置
+        publisher_ = this->create_publisher<geometry_msgs::msg::PointStamped>("rviz2_position", 10);
     }
 
 private:
     rclcpp::Subscription<mineral_interfaces::msg::MineralArray>::SharedPtr subcription_; // 创建订阅者
     rclcpp::Client<mineral_interfaces::srv::Fetch>::SharedPtr client_; // 创建客户端
+    rclcpp::Publisher<geometry_msgs::msg::PointStamped>::SharedPtr publisher_; // 创建发布者
+
     mineral_interfaces::msg::MineralArray mineral_array;  // 获取矿石数组
+    geometry_msgs::msg::PointStamped rviz2_position;  // 打算发布给rviz2的位置
 
     geometry_msgs::msg::Point current_position;  // 获取当前位置
     //当前位置初始化为(0,0,0)
@@ -51,6 +58,12 @@ private:
         int index = chooseMineral(msg);
         // 输出
         RCLCPP_INFO(this->get_logger(), "成功选择出距离自己最近的矿石，编号为%d", index);
+        // 更新当前位置，根据index选择出矿石，并将其位置赋值给当前位置
+        current_position = msg->minerals[index - 1].position;
+        // RCLCPP_INFO(this->get_logger(), "成功更新当前位置，它的位置是：(%f, %f, %f)",
+        //     current_position.x,
+        //     current_position.y,
+        //     current_position.z);
         
         // 创建请求
         auto request = std::make_shared<mineral_interfaces::srv::Fetch::Request>();
@@ -58,6 +71,16 @@ private:
         // 发送请求
         auto future = client_->async_send_request(request, std::bind(&Miner::send_request_callback, this, std::placeholders::_1));
         RCLCPP_INFO(this->get_logger(), "已成功发送服务请求");
+
+        // 发布给rviz2的位置
+        rviz2_position.header.frame_id = "map";
+        rviz2_position.header.stamp = this->now();
+        rviz2_position.point = current_position;
+        publisher_->publish(rviz2_position);
+        // RCLCPP_INFO(this->get_logger(), "已成功发布给rviz2的位置，它的位置是：(%f, %f, %f)",
+        //     rviz2_position.point.x,
+        //     rviz2_position.point.y,
+        //     rviz2_position.point.z);
     }
 
     // 发送服务的回调函数

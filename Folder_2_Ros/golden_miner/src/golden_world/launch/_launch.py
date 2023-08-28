@@ -1,6 +1,8 @@
 # a launch file for the golden world project
 from launch import LaunchDescription
 from launch_ros.actions import Node
+from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
 
 
 def generate_launch_description():
@@ -10,7 +12,7 @@ def generate_launch_description():
              name='golden_world_node',
              output='screen',
              parameters=[{
-                 "mineral_count": 10
+                'mineral_count': 14
              }]),
         Node(package='golden_world',
              executable='miner_node',

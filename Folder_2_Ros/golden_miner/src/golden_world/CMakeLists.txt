@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(mineral_interfaces REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 add_executable(golden_world_node src/golden_world_node.cpp)
 add_executable(miner_node src/miner_node.cpp)
@@ -16,12 +17,14 @@ add_executable(miner_node src/miner_node.cpp)
 ament_target_dependencies(
   golden_world_node
   "rclcpp"
+  "geometry_msgs"
   "mineral_interfaces"
 )
 
 ament_target_dependencies(
   miner_node
   "rclcpp"
+  "geometry_msgs"
   "mineral_interfaces"
 )
 
