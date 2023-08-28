@@ -20,7 +20,7 @@ def base_exam():
     # 1. 设定真值直线y1
     x = [i for i in range(300)]
     # y1与x个数相同
-    y1 = [math.log10(0.001*(i+1)) for i in x]
+    y1 = [math.log10(0.001 * (i + 1)) for i in x]
     # 2. 对y1加入正态分布的噪声
     y1_noise = np.array(y1) + np.random.normal(0, 0.05, len(x))
     # 3. 对y1_noise进行卡尔曼滤波

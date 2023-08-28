@@ -1,11 +1,11 @@
 #include "rclcpp/rclcpp.hpp"
+
 #include "mineral_interfaces/msg/mineral.hpp"
 #include "mineral_interfaces/msg/mineral_array.hpp"
 #include "mineral_interfaces/srv/fetch.hpp"
 
 
-class Miner : public rclcpp::Node
-{
+class Miner : public rclcpp::Node {
 public:
     Miner() : Node("miner")
     {

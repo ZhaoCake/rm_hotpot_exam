@@ -8,13 +8,15 @@ def get_contours(src_img):
     # 二值化
     gray = cv2.cvtColor(src_img, cv2.COLOR_BGR2GRAY)
     # cv2.imshow("gray_window", gray)
-    ret, mask = cv2.threshold(gray, 100, 255, cv2.THRESH_BINARY, cv2.THRESH_OTSU)
+    ret, mask = cv2.threshold(gray, 100, 255, cv2.THRESH_BINARY,
+                              cv2.THRESH_OTSU)
     # 先膨胀后腐蚀，避免边缘断裂
     kernel = np.ones((11, 11), np.uint8)
     mask = cv2.dilate(mask, kernel)
     mask = cv2.erode(mask, kernel)
     # 轮廓提取
-    contours, hierarchy = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    contours, hierarchy = cv2.findContours(mask, cv2.RETR_EXTERNAL,
+                                           cv2.CHAIN_APPROX_SIMPLE)
     # 计算轮廓面积
     areas = []
     for contour in contours:
@@ -48,7 +50,8 @@ class PreProcess:
         self.img[:, 0:int(width * 0.3)] = 0
         self.img[:, int(width * 0.7):width] = 0
         # 将图像中心10%复制到center中
-        self.center = self.img[int(height * 0.44):int(height * 0.51), int(width * 0.48):int(width * 0.52)]
+        self.center = self.img[int(height * 0.44):int(height * 0.51),
+                               int(width * 0.48):int(width * 0.52)]
 
     def find_cen_arrow(self, box):
         """
@@ -142,7 +145,8 @@ class PreProcess:
             box = np.intp(box)
             self.obj_chang = rect[1][0]
             self.obj_kuan = rect[1][1]
-            self.obj_distance = np.linalg.norm(rect[0] - np.array([self.cx, self.cy]))
+            self.obj_distance = np.linalg.norm(rect[0] -
+                                               np.array([self.cx, self.cy]))
             # 找出矢量
             self.get_obj_arrow(box)
             # 将box表示的矩形中的部分旋转后拷贝到h_obj中
@@ -170,7 +174,9 @@ class PreProcess:
         """
         # 先把角度在四个象限转化成需要的角度
         # 矩形中心，这个函数的theta要用弧度，所以放在前面
-        obj_center = np.array([np.cos(theta), np.sin(theta)]) * self.obj_distance + np.array([self.cx, self.cy])
+        obj_center = np.array([np.cos(theta), np.sin(theta)
+                               ]) * self.obj_distance + np.array(
+                                   [self.cx, self.cy])
         # 使两边中长的那条与theta平行
         if self.obj_chang > self.obj_kuan:
             self.obj_kuan, self.obj_chang = self.obj_chang, self.obj_kuan
@@ -191,7 +197,8 @@ class PreProcess:
             theta -= 270
 
         # 得到rotaterect
-        rect = ((obj_center[0], obj_center[1]), (self.obj_chang, self.obj_kuan), theta)
+        rect = ((obj_center[0], obj_center[1]), (self.obj_chang,
+                                                 self.obj_kuan), theta)
         box = cv2.boxPoints(rect)
         self.pred_box = np.intp(box)
         # 画出最小外接矩形

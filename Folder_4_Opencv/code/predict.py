@@ -9,6 +9,7 @@ class Predict:
     一个用于预测待击打扇叶1s后位置的类
     使用的时间单位是1/60s，即1帧
     """
+
     # 我要求我得到每一次的cen_arrow和obj_arrow，并且move_info列表也应该存在这个类里
     def __init__(self):
         """
@@ -33,7 +34,8 @@ class Predict:
             peak_value = 0
             trough_value = 0
             period_list = []
-            peak_index = self.find_peak(np.array(self.angle_velocity_list), 0.09)
+            peak_index = self.find_peak(np.array(self.angle_velocity_list),
+                                        0.09)
             for i in range(len(peak_index)):
                 peak_value += self.angle_velocity_list[peak_index[i]]
                 # 计算peak_index的两两之差，加入period列表
@@ -43,7 +45,8 @@ class Predict:
                 peak_value = peak_value / len(peak_index)
             except ZeroDivisionError:
                 peak_value = None
-            trough_index = self.findTrough(np.array(self.angle_velocity_list), 0.09)  # 其实这里的是没有用的，因为没有必要，干扰不大
+            trough_index = self.findTrough(np.array(self.angle_velocity_list),
+                                           0.09)  # 其实这里的是没有用的，因为没有必要，干扰不大
             for i in range(len(trough_index)):
                 trough_value += self.angle_velocity_list[trough_index[i]]
                 if i != 0:
@@ -64,13 +67,15 @@ class Predict:
                 """
                 得到一个目标函数，这个函数是角速度关于帧数的函数
                 """
+
                 # a = 0.040201594897572156
                 # b = 0.06054993193418074
                 def func1(add_value=0):
                     # x 是get_now_frame()的返回值整除2pi的余数
                     x = (get_now_frame() + add_value) % period
                     # print("x:", x)
-                    return a * np.cos(omiga * x) + b  # 使用cos,这样从波峰开始，对计算当前值更加友好
+                    return a * np.cos(
+                        omiga * x) + b  # 使用cos,这样从波峰开始，对计算当前值更加友好
 
                 def get_now_frame():
                     """
@@ -83,6 +88,7 @@ class Predict:
                     for i in range(20):
                         delta_angle += func1(i)
                     return delta_angle
+
                 self.func = func1_30
         else:
             pass
@@ -152,7 +158,8 @@ class Predict:
         if len(self.cen_data) > 10:
             self.judge_direction_rotation()
             if self.cen_data[-1] is not None and self.cen_data[-3] is not None:
-                angular_velocity = self.cal_angular_velocity(self.cen_data[-3], self.cen_data[-1])
+                angular_velocity = self.cal_angular_velocity(
+                    self.cen_data[-3], self.cen_data[-1])
                 # print("角速度为：", angular_velocity)
                 self.angle_velocity_list.append(angular_velocity)
                 # print("angle_velocity_list:", self.angle_velocity_list)
@@ -169,7 +176,8 @@ class Predict:
             data_array = np.array(self.cen_data)
         # data_array = np.array(self.cen_data)
         data_array[data_array < 0] += 2 * np.pi
-        dup_degree_list = list(data_array)  # 借鉴的开源代码这里用了深拷贝，但是我不知道为什么，就照自己的习惯写了。
+        dup_degree_list = list(
+            data_array)  # 借鉴的开源代码这里用了深拷贝，但是我不知道为什么，就照自己的习惯写了。
         for i in range(interpolation_num):
             dup_degree_list.insert(0, 0)
         dup_degree_array = np.array(dup_degree_list)
@@ -205,7 +213,8 @@ class Predict:
             if angle_velocity_list[i] <= 0 or angle_velocity_list[i] >= 0.2:
                 angle_velocity_list[i] = angle_velocity_list[i - 1]
         # 不改变数据分布，但是平滑
-        angle_velocity_list = signal.savgol_filter(angle_velocity_list, 9, 3)  # 参数作用：5是窗口大小，3是多项式的阶数
+        angle_velocity_list = signal.savgol_filter(angle_velocity_list, 9,
+                                                   3)  # 参数作用：5是窗口大小，3是多项式的阶数
         # 4.去除偏置
         # angle_velocity_list = angle_velocity_list - np.mean(angle_velocity_list)
         # 5.去除振幅
@@ -218,7 +227,9 @@ class Predict:
         只需要取前面200帧左右的数据即可
         """
         # print("进入函数")
-        peaks_index_list, peaks_dict = signal.find_peaks(data_array, height=thres, distance=190)
+        peaks_index_list, peaks_dict = signal.find_peaks(data_array,
+                                                         height=thres,
+                                                         distance=190)
         # # distance用于确定两个波峰的最小距离, 虽然索引是用的cen_angle，但是在这里可体现不出来
         # print(peaks_index_list)
         # print(peaks_dict)
@@ -233,7 +244,8 @@ class Predict:
     def findTrough(self, data_array: np.ndarray, thres: float):
         # trough_index = None
         negative_data_array = np.negative(data_array)  # 数组取相反数
-        troughs_index_list, _ = signal.find_peaks(negative_data_array, distance=190)
+        troughs_index_list, _ = signal.find_peaks(negative_data_array,
+                                                  distance=190)
         # print("找到波谷")
         # print(troughs_index_list)
         # time.sleep(2)

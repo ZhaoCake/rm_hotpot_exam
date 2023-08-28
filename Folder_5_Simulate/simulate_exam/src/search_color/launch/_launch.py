@@ -8,9 +8,10 @@ def generate_launch_description():
     return LaunchDescription([
         # 启动ign
         ExecuteProcess(
-            cmd=["ign gazebo",
+            cmd=[
+                "ign gazebo",
                 "./src/search_color/src/exam_world.sdf",
-                ],
+            ],
             output="screen",
             shell=True,
         ),
@@ -26,7 +27,9 @@ def generate_launch_description():
         Node(
             package="ros_ign_image",
             executable="image_bridge",
-            arguments=["camera",],
+            arguments=[
+                "camera",
+            ],
             output="screen",
             name="camera",
         ),
@@ -36,7 +39,7 @@ def generate_launch_description():
             name="search_color",
             output="screen",
             # 传递参数
-            parameters=[{"color": "blue"}]
-        )
+            parameters=[{
+                "color": "blue"
+            }])
     ])
-    

@@ -14,8 +14,10 @@ def rotate_arrow(arrow, rad):
     :return: 旋转后的矢量
     """
     # 将arrow绕原点旋转rad角度
-    rotate_matrix = np.array([[np.cos(rad), -np.sin(rad)], [np.sin(rad), np.cos(rad)]])
+    rotate_matrix = np.array([[np.cos(rad), -np.sin(rad)],
+                              [np.sin(rad), np.cos(rad)]])
     return np.dot(rotate_matrix, arrow)
+
 
 def main():
     """
@@ -53,7 +55,9 @@ def main():
             # 返回圆心坐标
             cx, cy = pre_hand.return_circle_heart()
             # 先把obj_angle的转为直角坐标
-            obj_angle_arrow = np.array([np.cos(predict.obj_angle), np.sin(predict.obj_angle)]) * 100 + np.array([cx, cy])
+            obj_angle_arrow = np.array(
+                [np.cos(predict.obj_angle),
+                 np.sin(predict.obj_angle)]) * 100 + np.array([cx, cy])
             # 画出
             # cv2.line(pre_hand.draw_img, (int(cx), int(cy)), (int(obj_angle_arrow[0]), int(obj_angle_arrow[1])), (255, 0, 0), 2)
 
@@ -64,7 +68,10 @@ def main():
                 # 超过2pi的部分，需要减去2pi
                 if predict.predict_angle > 2 * np.pi:
                     predict.predict_angle -= 2 * np.pi
-                predict_arrow = np.array([np.cos(predict.predict_angle), np.sin(predict.predict_angle)]) * 100
+                predict_arrow = np.array([
+                    np.cos(predict.predict_angle),
+                    np.sin(predict.predict_angle)
+                ]) * 100
                 pre_hand.draw_obj(predict.predict_angle)
                 # 将predict_arrow的圆心坐标设为cx, cy
                 # predict_arrow = predict_arrow + np.array([cx, cy])
@@ -91,10 +98,13 @@ def main():
         # 对delta_time保留八位小数
         delta_time = round((end - start) * 1000, 8)
 
-        print("\ttime:", delta_time, "ms", "\tpredict_box:", f"{pre_box}", "\torientation:", predict.orientation)
+        print("\ttime:", delta_time, "ms", "\tpredict_box:", f"{pre_box}",
+              "\torientation:", predict.orientation)
         # 将上述输出写入日志文件,名称是日期加时间的純数字形式
         with open(log, "a") as f:
-            f.write("\ttime:" + str(delta_time) + "ms" + "\tpredict_box:" + str(pre_box) + "\torientation:" + str(predict.orientation) + "\n")
+            f.write("\ttime:" + str(delta_time) + "ms" + "\tpredict_box:" +
+                    str(pre_box) + "\torientation:" +
+                    str(predict.orientation) + "\n")
         # cv2.imshow("test_window", pre_hand.draw_img)
         # if cv2.waitKey(1) & 0xFF == ord('q'):
         #     break

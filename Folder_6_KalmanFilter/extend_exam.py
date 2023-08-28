@@ -15,7 +15,8 @@ def get_center(frame):
     mask = cv2.erode(mask, kernel, iterations=2)
     mask = cv2.dilate(mask, kernel, iterations=2)
     # 寻找轮廓
-    contours, hierarchy = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    contours, hierarchy = cv2.findContours(mask, cv2.RETR_EXTERNAL,
+                                           cv2.CHAIN_APPROX_SIMPLE)
     # 最大轮廓的最大外接圆
     max_contour = max(contours, key=cv2.contourArea)
     (x, y), radius = cv2.minEnclosingCircle(max_contour)
@@ -47,13 +48,16 @@ def main():
             cy_pre = int(kalman_filter_y.return_predict())
             cv2.circle(frame, (cx_pre, cy_pre), r, (123, 0, 43), 2)
             # 在图片左上角显示图例说明
-            cv2.putText(frame, "green: true position", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
-            cv2.putText(frame, "purple: filter position", (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (123, 0, 43), 2)
+            cv2.putText(frame, "green: true position", (10, 30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+            cv2.putText(frame, "purple: filter position", (10, 50),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.7, (123, 0, 43), 2)
             cv2.imshow("frame", frame)
             if cv2.waitKey(30) & 0xFF == ord('q'):
                 break
         else:
             break
+
 
 if __name__ == '__main__':
     main()

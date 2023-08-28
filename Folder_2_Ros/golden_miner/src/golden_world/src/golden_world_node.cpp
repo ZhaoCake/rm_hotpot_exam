@@ -7,8 +7,7 @@
 class GoldenWorld : public rclcpp::Node
 {
 public:
-    GoldenWorld() : Node("golden_world")
-    {
+    GoldenWorld() : Node("golden_world") {
         // 创建参数，用于初始化矿石的数量
         this->declare_parameter<int>("mineral_count", 9);
         mineral_array = initMineralArray();
@@ -23,8 +22,7 @@ public:
 
 private:
     // 随机生成平方和小于10的三个数，用数组表示
-    geometry_msgs::msg::Point randomPosition()
-    {
+    geometry_msgs::msg::Point randomPosition() {
         geometry_msgs::msg::Point point;
         point.x = rand() % 10 / 10.0;
         point.y = rand() % 10 / 10.0;
@@ -49,8 +47,7 @@ private:
     }
 
     // 创建一个矿石数组
-    mineral_interfaces::msg::Mineral createMineral(int index)
-    {   
+    mineral_interfaces::msg::Mineral createMineral(int index) {   
         if (index < 1 || index > 10)
         {
             RCLCPP_ERROR(this->get_logger(), "矿石编号必须在1-10之间");
@@ -66,9 +63,7 @@ private:
     }
 
     // 定时器回调函数
-    void timer_callback()
-    {
-        
+    void timer_callback() {
         // 发布矿石数组
         publisher_->publish(mineral_array);
         RCLCPP_INFO(this->get_logger(), "当前还有%d个矿石", int(mineral_array.minerals.size()));
@@ -82,8 +77,7 @@ private:
 
     // 服务回调函数
     void fetch(const std::shared_ptr<mineral_interfaces::srv::Fetch::Request> request,
-               std::shared_ptr<mineral_interfaces::srv::Fetch::Response> response)
-    {
+               std::shared_ptr<mineral_interfaces::srv::Fetch::Response> response) {
         // 获取请求中的矿石编号
         int index = request->index;
         // 在矿石数组中查找该编号的矿石
@@ -102,8 +96,7 @@ private:
             }
         }
     }
-   
-    
+
     mineral_interfaces::msg::MineralArray mineral_array;
     rclcpp::TimerBase::SharedPtr timer_;  // 创建定时器
     rclcpp::Publisher<mineral_interfaces::msg::MineralArray>::SharedPtr publisher_;
@@ -112,8 +105,7 @@ private:
     double price_all = 0;
 };
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<GoldenWorld>());
     rclcpp::shutdown();
