@@ -1,6 +1,6 @@
 #include "rclcpp/rclcpp.hpp"
 #include "geometry_msgs/msg/point_stamped.hpp"
-
+#include "visualization_msgs/msg/marker.hpp"
 #include "mineral_interfaces/msg/mineral.hpp"
 #include "mineral_interfaces/msg/mineral_array.hpp"
 #include "mineral_interfaces/srv/fetch.hpp"
@@ -20,15 +20,29 @@ public:
 
         // 创建发布者，发布给rviz2的位置
         publisher_ = this->create_publisher<geometry_msgs::msg::PointStamped>("rviz2_position", 10);
+        line_publisher_ = this->create_publisher<visualization_msgs::msg::Marker>("point_trajectory", 10);
+
+        marker_.header.frame_id = "map";
+        marker_.type = visualization_msgs::msg::Marker::LINE_STRIP;
+        marker_.action = visualization_msgs::msg::Marker::ADD;
+        marker_.id = 0;
+        marker_.color.r = 1.0;
+        marker_.color.g = 0.0;
+        marker_.color.b = 0.0;
+        marker_.color.a = 1.0;
+        marker_.scale.x = 0.1;
+        marker_.scale.y = 0.1;
     }
 
 private:
     rclcpp::Subscription<mineral_interfaces::msg::MineralArray>::SharedPtr subcription_; // 创建订阅者
     rclcpp::Client<mineral_interfaces::srv::Fetch>::SharedPtr client_; // 创建客户端
     rclcpp::Publisher<geometry_msgs::msg::PointStamped>::SharedPtr publisher_; // 创建发布者
+    rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr line_publisher_; //轨迹发布者
 
     mineral_interfaces::msg::MineralArray mineral_array;  // 获取矿石数组
     geometry_msgs::msg::PointStamped rviz2_position;  // 打算发布给rviz2的位置
+    visualization_msgs::msg::Marker marker_;  // Marker
 
     geometry_msgs::msg::Point current_position;  // 获取当前位置
     //当前位置初始化为(0,0,0)
@@ -58,8 +72,18 @@ private:
         int index = chooseMineral(msg);
         // 输出
         RCLCPP_INFO(this->get_logger(), "成功选择出距离自己最近的矿石，编号为%d", index);
-        // 更新当前位置，根据index选择出矿石，并将其位置赋值给当前位置
-        current_position = msg->minerals[index - 1].position;
+        // 更新当前位置，根据mineral自己的index属性选择出矿石，并将其位置赋值给当前位置
+        for (int i = 0; i < (int)(msg->minerals.size()); i++)
+        {
+            if (msg->minerals[i].index == index)
+            {
+                current_position = msg->minerals[i].position;
+                break;
+            }
+        }
+        // 给marker_添加点
+        marker_.points.push_back(current_position);
+        line_publisher_->publish(marker_);
         // RCLCPP_INFO(this->get_logger(), "成功更新当前位置，它的位置是：(%f, %f, %f)",
         //     current_position.x,
         //     current_position.y,
