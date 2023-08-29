@@ -39,9 +39,11 @@ class Kalman:
             phi = np.array([measure, self.y])  # 参数向量
             error = measure - np.dot(self.theta, phi)  # 误差，
             p_phi = np.dot(self.p, phi)  # 协方差与参数向量的乘积
-            denominator = self.alpha + np.dot(np.dot(phi.T, self.p), phi)  # 通过公式计算分母
+            denominator = self.alpha + np.dot(np.dot(phi.T, self.p),
+                                              phi)  # 通过公式计算分母
             self.theta += np.dot(p_phi, error) / denominator  # 更新参数向量
-            self.p -= np.dot(np.dot(p_phi, p_phi.T), self.p) / denominator  # 更新协方差
+            self.p -= np.dot(np.dot(p_phi, p_phi.T),
+                             self.p) / denominator  # 更新协方差
         elif update == 0:
             # 原始的kalman filter
             pass
