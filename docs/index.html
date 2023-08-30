@@ -6,15 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sushantrahate/docsify-darkly-theme/css/darkly.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
 </head>
 <body>
   <div id="app"></div>
+  <style>
+    :root {
+      /* Reduce the font size */
+      --base-font-size: 20px;
+  
+      /* Change the theme color hue */
+      --theme-hue: 253;
+  
+      /* Change the sidebar bullets */
+      --sidebar-nav-link-before-content: '🚩';
+    }
+  </style>
   <script>
     window.$docsify = {
       name: 'RM_HOTPOT_EXAM OF ZhaoCake',
       repo: 'https://github.com/ZhaoCake/rm_hotpot_exam',
       loadSidebar: true,
+      loadNavbar: true,
       subMaxLevel: 2,
       coverpage: true,
       count:{
@@ -23,7 +39,61 @@
       color:'rgb(90,90,90)',
       language:'chinese'
       },
+      themeable: {
+          readyTransition : true, // default
+          responsiveTables: true  // default
+      }
     }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '52b39acbec7ca69d7071',
+      clientSecret: 'e17de2c2129ba5ccdd76e7795d7fadb246ab0c00',
+      repo: 'https://github.com/ZhaoCake/rm_hotpot_exam',
+      owner: 'ZhaoCake',
+      admin: ['ZhaoCake'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+//     plugins: [
+//     function (hook, vm) {
+//         hook.doneEach(function () {
+//             var label, domObj, main, divEle, gitalk;
+//             label = vm.route.path.split("/").pop();
+//             domObj = Docsify.dom;
+//             main = domObj.getNode("#main");
+
+//             /**
+//              * render gittalk
+//              */
+//             if (vm.route.path.includes("zh-cn")) {
+//                 gitalkConfig.language = "zh-CN";
+//             }
+//             Array.apply(
+//                 null,
+//                 document.querySelectorAll("div.gitalk-container")
+//             ).forEach(function (ele) {
+//                 ele.remove();
+//             });
+//             divEle = domObj.create("div");
+//             divEle.id = "gitalk-container-" + label;
+//             divEle.className = "gitalk-container";
+//             divEle.style = "width: " + main.clientWidth + "px; margin: 0 auto 20px;";
+//             domObj.appendTo(domObj.find(".content"), divEle);
+//             gitalk = new Gitalk(
+//                 Object.assign(gitalkConfig, {
+//                     id: !label ? "home" : label
+//                 })
+//             );
+//             gitalk.render("gitalk-container-" + label);
+//         })
+//     }
+// ]
   </script>
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
