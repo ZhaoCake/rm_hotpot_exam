@@ -53,7 +53,7 @@ def main():
                         cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
             cv2.putText(frame, "purple: filter position", (10, 50),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.7, (123, 0, 43), 2)
-            cv2.imshow("frame", frame)
+            cv2.imshow("Not True", frame)
             if cv2.waitKey(30) & 0xFF == ord('q'):
                 break
         else:
