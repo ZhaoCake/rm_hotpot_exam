@@ -47,12 +47,12 @@ private:
         marker_publisher_->publish(std::move(message));
     }
 
-    // 随机生成平方和小于10的三个数，用数组表示
+    // 随机生成平方和小于10的三个数，可以有负数，用于初始化矿石的位置
     geometry_msgs::msg::Point randomPosition() {
         geometry_msgs::msg::Point point;
-        point.x = rand() % 10 / 10.0;
-        point.y = rand() % 10 / 10.0;
-        point.z = rand() % 10 / 10.0;
+        point.x = (rand() % 20 - 10) / 10.0;
+        point.y = (rand() % 20 - 10) / 10.0;
+        point.z = (rand() % 20 - 10) / 10.0;
         return point;
     }
 
