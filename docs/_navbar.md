@@ -1,7 +1,7 @@
 <!-- docs/_navbar.md -->
 
 * 首页
-    * [首页](README.md)
+    * [首页](http://zhaocake.github.io/)
     * [CSDN](https://blog.csdn.net/raw_inputhello)
 
 * 火锅战队2024考核
