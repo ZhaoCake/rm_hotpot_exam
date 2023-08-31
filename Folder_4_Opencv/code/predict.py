@@ -176,8 +176,7 @@ class Predict:
             data_array = np.array(self.cen_data)
         # data_array = np.array(self.cen_data)
         data_array[data_array < 0] += 2 * np.pi
-        dup_degree_list = list(
-            data_array)  # 借鉴的开源代码这里用了深拷贝，但是我不知道为什么，就照自己的习惯写了。
+        dup_degree_list = list(data_array)  # 借鉴的开源代码这里用了深拷贝，但是我不知道为什么，就照自己的习惯写了。
         for i in range(interpolation_num):
             dup_degree_list.insert(0, 0)
         dup_degree_array = np.array(dup_degree_list)

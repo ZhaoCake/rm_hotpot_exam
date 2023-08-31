@@ -5,7 +5,6 @@
 #include "predict.h"
 // 虽然我的预测函数不在这个类里面，但是依然有许多函数，比如判断弧度值符号等功能是需要使用的
 
-
 float next_frame(int pred_num, int frame_number) {
     // 按道理是需要知道这个周期的起始位置的，但是由于启动时差不多是一样的，姑且按照余弦函数来做
     int x = (frame_number + pred_num) % 201;
@@ -67,7 +66,7 @@ int main() {
         std::cout << "\ttime: " << time << "\tbox: " << box << std::endl;
 
         // 显示当前帧
-        cv::imshow("video", frame);
+        // cv::imshow("video", frame);
         // 等待30ms，如果按下ESC键则退出循环
         if (cv::waitKey(1) == 27) {
             break;
