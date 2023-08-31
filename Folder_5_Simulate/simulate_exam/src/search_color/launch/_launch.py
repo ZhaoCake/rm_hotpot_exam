@@ -2,10 +2,18 @@ import os.path
 from launch import LaunchDescription
 from launch.actions import ExecuteProcess
 from launch_ros.actions import Node
+from launch.substitutions import TextSubstitution, LaunchConfiguration
+from launch.actions import DeclareLaunchArgument
 
 
 def generate_launch_description():
+    color_launch_arg = DeclareLaunchArgument(
+        "color",
+        default_value=TextSubstitution(text='blue'),
+        description="The color to search for",
+    )
     return LaunchDescription([
+        color_launch_arg,
         # 启动ign
         ExecuteProcess(
             cmd=[
@@ -40,6 +48,6 @@ def generate_launch_description():
             output="screen",
             # 传递参数
             parameters=[{
-                "color": "blue"
+                "color": LaunchConfiguration("color")
             }])
     ])

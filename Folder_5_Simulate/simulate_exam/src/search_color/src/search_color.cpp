@@ -14,7 +14,7 @@ class SearchColor : public rclcpp::Node {
 public:
 	SearchColor() : Node("search_color") {
         // 声明一个带检测颜色的参数
-        this->declare_parameter("color", "blue");
+        this->declare_parameter("color", "green");
 		// 读取camera画面
 		subscrption_ = this->create_subscription<sensor_msgs::msg::Image>(
             "camera",
@@ -34,6 +34,7 @@ private:
         // 根据颜色参数，提取颜色
         std::string color;
         this->get_parameter("color", color);
+        RCLCPP_INFO(this->get_logger(), "color: %s", color.c_str());
         /*
          * 似乎由于光线的问题，即使是使用了hsv空间也还是会有一些颜色识别不出来。
            考虑改变光源而不是阈值。
@@ -42,8 +43,8 @@ private:
          */
         cv::Scalar lower, upper;
         if (color == "red") {
-            lower = cv::Scalar(140, 20, 20);
-            upper = cv::Scalar(180, 255, 255);
+            lower = cv::Scalar(0, 20, 20);
+            upper = cv::Scalar(10, 255, 255);
         } else if (color == "blue") {
             lower = cv::Scalar(100, 20, 20);
             upper = cv::Scalar(124, 255, 255);
