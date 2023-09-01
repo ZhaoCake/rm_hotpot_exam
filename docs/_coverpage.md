@@ -14,4 +14,3 @@
 [CSDN](https://blog.csdn.net/raw_inputhello)
 <!-- [Get Started](#/) -->
 
-<img src="https://iw233.cn/api.php?sort=pc" width="60%">
